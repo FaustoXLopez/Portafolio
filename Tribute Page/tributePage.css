@@ -1,0 +1,22 @@
+main{
+    border: 1vw darkred solid;
+}
+
+img{
+    display: block;
+    width: 31%;    
+    margin: auto;
+}
+
+
+#main{
+    text-align: center;    
+}
+
+body{
+    margin: 0;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    
+}

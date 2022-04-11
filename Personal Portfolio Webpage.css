@@ -1,0 +1,178 @@
+    body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background: url(./Foto\ Hoj.jpg) top center scroll;
+        } 
+
+        .container{
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        background: linear-gradient(135deg,rgba(128,0,0,.9),rgba(0,0,0,.9),rgba(0,0,128,.9));
+        
+        }
+        
+        #navbar{
+            display: flex;
+            justify-content: end;
+            background-color: rgba(128,0,0,.9); 
+            position: sticky;
+            top: 0;
+            width: 100%;
+            
+            
+        }
+    
+        a{
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 3vh;
+            font-family: sans-serif;
+            padding: 2vh;
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+
+    
+        #welcome-section{
+            color:rgba(255,0,0,0.9);
+            font-size: 10vh;
+            font-family: sans-serif;
+            font-weight: 700;
+            text-align: center;
+            
+            width: fit-content;
+            margin: auto;
+            
+            
+        }
+    
+    
+        #job{
+            text-align: end;
+            color: white;
+            font-size: 6vh;
+            
+            font-variant: small-caps;
+        }
+
+        #welcome-section, #work{
+            
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            scroll-snap-align: start;
+            overflow: hidden;
+            
+        }
+
+        h1{
+            margin: 0;
+            
+
+        }
+
+        img{
+            width: 100%;
+
+        }
+
+        a:hover>img{
+        transform: scale(2);
+        filter: blur(1px);
+        }
+
+        a:hover>h2{
+            background-color: rgba(0,0,0,0.9);
+            display: flex;
+            opacity: 1;
+
+        }
+
+        #technicalMedia_img{
+            position: absolute;
+            opacity: 0;
+        }
+
+        a:hover>#technicalMedia_img{
+            opacity: 1;
+            filter: blur(1px);
+            }
+
+        h2, img {
+            transition: 0.5s;
+        }
+
+        #work{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: auto;
+            text-align: center;
+            place-items: center;
+            height: min-content;
+            margin: 1vw;
+            color: rgba(255,255,255,0.9);
+
+        }
+
+        #work>h2{
+            grid-column: span 2;
+
+        }
+
+        .project-tile{
+            padding: 0;
+            display: block;
+            overflow: hidden;
+            aspect-ratio: 1/1;
+            margin: 1vw;
+            
+        }
+ 
+        .p h2{
+            position: absolute;
+            inset: 0;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            opacity: 0;
+            display: flex;
+        }
+
+        .project-tile{
+            position: relative;
+            padding: 0;
+        }
+
+        .p{
+            padding: 0;
+        }
+
+        footer{
+            scroll-snap-align: start;
+        }
+
+        @media (min-width:860px) {
+            #work{
+                grid-template-columns: repeat(4, 1fr);
+                height: fit-content;
+            }
+            
+            #work>h2{
+                grid-column: span 4;
+                margin: 0;
+                padding: 6vw;
+            }
+
+            .project-tile{
+
+                
+            }
+        }

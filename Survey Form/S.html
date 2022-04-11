@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+
+<body>
+    <section>
+    <h1 id="title">APEX</h1>
+    <p id="description">Gracias</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Name
+            <input type="" id="name" placeholder="Ingrese el nombre" required>
+        </label>
+        <label for="email" id="email-label" required>e-m@il
+            <input type="email" id="email" placeholder="Ingrese el email">
+        </label>
+        <label for="number" id="number-label">Number
+            <input type="number" id="number" placeholder="Ingrese el número" min="0" max="15" required>
+        </label>
+        <label for="dropdown" id="dropdown">Dropdown
+            <select name="dropdown" id="dropdown">
+                <option value="O1">O1</option>
+                <option value="O2">O2</option>
+            </select>
+        </label>
+        <label for="name">Selecciona un nombre:
+            <div class="o"><input type="radio" name="name" id="">Fausto</div>
+
+            <div class="o"><input type="radio" name="name" id="name2" checked>Xavier
+            </div>
+        </label>
+        
+        <label for="cb">Selecciona:
+        <div class="o"><input type="checkbox" name="cb" id="cb">C1
+        </div>
+        <div class="o"><input type="checkbox" name="cb" id="cb2">C2
+        </div>
+        </label>
+
+        <label for="ta">
+            Aditional Comments<textarea></textarea>
+        </label>
+
+        <div id="button"><button type="submit"  id="submit">Enviar</button>
+        </div>
+    </form>
+    </section>
+</body>
+
+</html>

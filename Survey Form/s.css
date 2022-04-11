@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+section{
+    background: linear-gradient(rgba(128,0,255,0.4),rgba(0,128,255,0.4)) fixed, url("/Foto Hoj.jpg") fixed no-repeat top;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+}
+
+
+form {
+    background: rgba(0,0,64,0.6);
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vh;
+    font-variant: small-caps;
+
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 100%;
+    background-color: rgba(255,128,0,0.9);
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50px;
+}
+
+.o{
+    font-variant: normal;
+}
+
+form > *{
+    margin: 1vh;
+}
